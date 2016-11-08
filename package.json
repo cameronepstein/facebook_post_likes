@@ -1,0 +1,20 @@
+{
+  "name": "facebook_post_likes",
+  "version": "1.0.0",
+  "description": "Install: ``` npm install```<br/> Version: ```1.0```<br/>",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cameronepstein/facebook_post_likes.git"
+  },
+  "author": "cameronepstein",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cameronepstein/facebook_post_likes/issues"
+  },
+  "homepage": "https://github.com/cameronepstein/facebook_post_likes#readme"
+}
