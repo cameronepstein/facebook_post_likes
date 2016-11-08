@@ -1,7 +1,17 @@
 var http = require('http');
+var fs = require('fs');
 
-var server = http.createServer(function(req, res) {
-  res.writeHead(200);
-  res.end('Hello world');
-});
-server.listen(8000);
+function onRequest(request, response) {
+  response.writeHead(200, {'Content-Type': 'text/html'});
+  fs.readFile('./index.html', null, function(error, data){
+      if (error) {
+        response.writeHead(404);
+        response.write('Error, file not found!');
+      } else {
+        response.write(data);
+      }
+      response.end();
+  });
+}
+
+http.createServer(onRequest).listen(8000);
